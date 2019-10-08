@@ -31,7 +31,30 @@
                 <option value="other">Other</option>
             </select><br /><br />
             <label for="additionalInfo">Additional Information: </label>
-            
+            <textarea id="additionalInfo" name="additionalInfo"></textarea><br /><br />
+            <fieldset>
+                <legend>Have you been to the restaurant?</legend>
+                <input type="radio" id="choice1" name="attended" value="no">
+                <label for="choice1">No</label>
+                <input type="radio" id="choice2" name="attended" value="yes">
+                <label for="choice2">Yes</label>
+                <br /><br />
+
+                <legend>Best days to contact you:</legend>
+                <input type="checkbox" id="monday" name="day" value="monday">
+                <label for="monday">M</label>
+                <input type="checkbox" id="tuesday" name="day" value="tuesday">
+                <label for="tuesday">T</label>
+                <input type="checkbox" id="wednesday" name="day" value="wednesday">
+                <label for="wednesday">W</label>
+                <input type="checkbox" id="thursday" name="day" value="thursday">
+                <label for="thursday">Th</label>
+                <input type="checkbox" id="friday" name="day" value="friday">
+                <label for="friday">F</label>
+            </fieldset><br />
+
+            <input type="submit" name="submit" value="Send Request"><br /><br /><hr />
+
         </form>
 
         <footer>
