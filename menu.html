@@ -9,100 +9,100 @@
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        
+        <style>
+            body{
+                background-color: #98C1D9;
+                font-family: Arial, sans-serif;
+            }
+
+            h2{
+                font-size: 1.4em;
+            }
+
+            div{
+                text-align: center;
+            }
+
+            .container-fluid .row{
+                padding-top: 40px;
+            }
+        </style>
     </head>
+
     <body>
         <header class="jumbotron">
             <p>Home</p>
-            <h1>Jake's Cereal Shack</h1>
-            <style>
-                body{
-                    background-color: #98C1D9;
-                    font-family: Arial, sans-serif;
-                }
-
-                th{
-                    font-size: 1.4em;
-                }
-
-                tr{
-                    text-align: center;
-                }
-            </style>
+            <h2>Jake's Cereal Shack</h2>
         </header>
 
-        <div class="container">
+        <div class="container-fluid">
 
-            <nav>
-                <a href="restaurantSite.html">Home</a>
-                <a href="">Menu</a>
-                <a href="contactUs.html">Contact Us</a>
-            </nav>
-            <hr /><br />
+                <nav class="nav">
+                    <a href="restaurantSite.html">Home</a>
+                    <a href="">Menu</a>
+                    <a href="contactUs.html">Contact Us</a>
+                </nav>
+                <hr /><br />
             
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th class="col-lg-4">Frosted Flakes</th>
-                        <th class="col-lg-4">Lucky Charms</th>
-                        <th class="col-lg-4">Count Chocula</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>They'reeeeeeee great!</td>
-                        <td>They're magically delicious!</td>
-                        <td>Loads of chocolatey marshmallows in every bowl!</td>
-                    </tr>
-                    <tr>
-                        <td>Crunchy corn flakes with a coating of sweet frosting</td>
-                        <td>Delicious crunchy cereal with sweet marshmallow bits</td>
-                        <td>Chocolatey whole-grain corn cereal with marshmallow bits</td>
-                    </tr>
-                    <tr>
-                        <td>Recommended pairings: Rice milk, oat milk, goat milk</td>
-                        <td>Recommended pairings: Whole milk, coconut milk, chocolate protein milk</td>
-                        <td>Recommended pairings: Vanilla almond milk, cashew milk, strawberry milk</td>
-                    </tr>
-                    <tr>
-                        <td>3.95</td>
-                        <td>3.95</td>
-                        <td>3.49</td>
-                    </tr>
-
-                    <tr>
-                        <th>Keto Choco Crispies</th>
-                        <th>Gluten-Free Peanut Butter Squares</th>
-                        <th>Paleo Puffs</th>
-                    </tr>
-                    <tr>
-                        <td>Crispy chocolatey goodness!</td>
-                        <td>Real peanut butter in every bite!</td>
-                        <td>A real blast from the past!</td>
-                    </tr>
-                    <tr>
-                        <td>Cripy chocolatey shapes with powdered sugar</td>
-                        <td>Gluten-free, crunchy squares made from rich peanut butter</td>
-                        <td>Crispy berry and vanilla puffs with fruity, sweet flavor</td>
-                    </tr>
-                    <tr>
-                        <td>Recommended pairings: Whole milk, almond milk, oat milk</td>
-                        <td>Recommended pairings: Chocolate milk, vanilla coconut milk, rice milk</td>
-                        <td>Recommended pairings: Cashew milk, goat milk, strawberry milk</td>
-                    </tr>
-                    <tr>
-                        <td>4.49</td>
-                        <td>4.95</td>
-                        <td>4.49</td>
-                    </tr>
-                </tbody>
-            </table>
-            <hr /><br>
+                <div class="row">
+                    <div class="col-4">
+                        <h2>Frosted Flakes</h2>
+                        <p>They'reeeeeeee great!<br />
+                        Crunchy corn flakes with a coating of sweet frosting<br />
+                        Recommended pairings: Rice milk, oat milk, goat milk<br />
+                        3.95
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Lucky Charms</h2>
+                        <p>They're magically delicious!<br />
+                        Delicious crunchy cereal with sweet marshmallow bits<br />
+                        Recommended pairings: Whole milk, coconut milk, chocolate protein milk<br />
+                        3.49
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Count Chocula</h2>
+                        <p>Loads of chocolatey marshmallows in every bowl!<br />
+                        Chocolatey whole-grain corn cereal with marshmallow bits<br />
+                        Recommended pairings: Vanilla almond milk, cashew milk, strawberry milk<br />
+                        3.49
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <h2>Keto Choco Crispies</h2>
+                        <p>Crispy chocolatey goodness!<br />
+                        Crispy chocolatey shapes with powdered sugar<br />
+                        Recommended pairings: Whole milk, almond milk, oat milk<br />
+                        4.49
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Gluten-Free Peanut Butter Squares</h2>
+                        <p>Real peanut butter in every bite!<br />
+                        Gluten-free, crunchy squares made from rich peanut butter<br />
+                        Recommended pairings: Chocolate milk, vanilla coconut milk, rice milk<br />
+                        4.95
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Paleo Puffs</h2>
+                        <p>A real blast from the past!<br />
+                        Crispy berry and vanilla puffs with fruity, sweet flavor<br />
+                        Recommended pairings: Cashew milk, goat milk, strawberry milk<br />
+                        4.95
+                        </p>
+                    </div>
+                </div>
         </div>
 
         <footer class="jumbotron">
             <p>8014 Bristle Lane, Charlotte, NC 28214</p>
             <p>(908) 442-2037</p>
-            <br />
             <p>&copy; 2019 Jacob Porter. All rights reserved.</p>
         </footer>
     </body>
