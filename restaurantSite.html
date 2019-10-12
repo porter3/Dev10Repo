@@ -2,33 +2,55 @@
 <html lang="en">
     <head>
         <title>Jake's Cereal Shack</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+        <style>
+            body{
+                background-color: #E0FBFC;
+                font-family: Arial, sans-serif;
+            }
+        </style>
     </head>
+
     <body>
-        <header><p>Home Page</p></header> <hr />
-        <h1>Jake's Cereal Shack</h1> <hr />
+        <header class="jumbotron">
+            <p>Home</p>
+            <h1>Jake's Cereal Shack</h1>
+        </header> 
 
-        <nav>
-            <p>
-                <a href="">Home</a> &nbsp;
-                <a href="menu.html">Menu</a> &nbsp;
-                <a href="contactUs.html">Contact Us</a> &nbsp;
+        <div class="container-fluid">
+
+            <nav class="nav">
+                <a href="">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contactUs.html">Contact Us</a>
+            </nav>
+            <hr /><br />
+
+            <div class="text-center">
+                <img src="images/cereal_bowl.jpg" class="rounded img-fluid" alt="Cereal and orange juice" width="400" style="padding-bottom: 40px"/> <br />
+            </div>
+
+            <p>Jake's cereal shack serves the most healthy and delicious cereal in all of Charlotte.
+                We have your well-known favorites, as well as a variety of unique homemade cereals.
+                We serve gluten-free, paleo, and keto options as well. Pair any single or mix of cereals
+                with our speciality milks! Make sure to visit us on Saturday mornings for our all-you-eat
+                special! Take out available.
             </p>
-        </nav>
-        <hr /><br />
 
-        <img src="images/cereal_bowl.jpg" width="400"/> <br />
+        </div>
 
-        <p>Jake's cereal shack serves the most healthy and delicious cereal in all of Charlotte.
-            We have your well-known favorites, as well as a variety of unique homemade cereals.
-            We serve gluten-free, paleo, and keto options as well. Pair any single or mix of cereals
-            with our speciality milks! Make sure to visit us on Saturday mornings for our all-you-eat
-            special! Take out available.
-        </p>
-        <hr /><br />
-
-        <footer>
+        <footer class="jumbotron">
             <p>8014 Bristle Lane, Charlotte, NC 28214</p>
             <p>(908) 442-2037</p>
+            <br />
+            <p>&copy; 2019 Jacob Porter. All rights reserved.</p>
         </footer>
     </body>
 </html>
