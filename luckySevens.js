@@ -18,6 +18,8 @@ function runGame(){
         return false;
     }
 
+    //display results table and starting bet
+    document.getElementById("resultsTable").style = "display: block";
     document.getElementById("startingBetResult").innerHTML = money;
 
     var sidesOfDie = 6;
