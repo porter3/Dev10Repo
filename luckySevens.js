@@ -1,6 +1,5 @@
 function validateInput(){
     var startingBet = document.getElementById("startingBet").value;
-    console.log(typeof(startingBet) + startingBet);
 
     if (startingBet > 0){
         return Number(startingBet);
