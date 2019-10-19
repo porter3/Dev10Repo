@@ -7,6 +7,8 @@ function validateInput(){
     }
     else{
         alert("Starting bet must be a positive number");
+        document.forms["betForm"]["startingBet"].parentElement.className = "row marginSpace form-group has-error";
+        document.forms["betForm"]["startingBet"].focus();
         return false;
     }
 }
@@ -20,7 +22,7 @@ function runGame(){
 
     //display results table and starting bet
     document.getElementById("resultsTable").style = "display: block";
-    document.getElementById("startingBetResult").innerHTML = money;
+    document.getElementById("startingBetResult").innerText = money;
 
     var sidesOfDie = 6;
     var rollCounter = 0;
@@ -48,15 +50,12 @@ function runGame(){
             highScoreOfMoney = money;
             highestAmountRollCount = rollCounter;
         }
-
-        console.log("1st die: " + dieOne + " " + "2nd die: " + dieTwo + " " + 
-        "current money: " + money + " " + "rolls so far: " + " " + rollCounter);
     }
     //check that there's money to play with, game will end if there's not
     while (money > 0);
 
-    document.getElementById("totalRolls").innerHTML = rollCounter;
-    document.getElementById("highestAmountWon").innerHTML = highScoreOfMoney;
-    document.getElementById("highestAmountRollCount").innerHTML = highestAmountRollCount;
+    document.getElementById("totalRolls").innerText = rollCounter;
+    document.getElementById("highestAmountWon").innerText = highScoreOfMoney;
+    document.getElementById("highestAmountRollCount").innerText = highestAmountRollCount;
 
 }
