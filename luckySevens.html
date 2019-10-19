@@ -2,25 +2,51 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    .marginSpace{
+        margin-bottom: 20px;
+    }
+
+    .col-in-center{
+        float: none;
+        margin: 0 auto;
+    }
+    </style>
 </head>
-<body> <!--insert onclick script-->
+<body>
     <div class="container">
-        <h1>Lucky Sevens</h1>
-        <div class="row">   
-                <label for="startingBet">Starting Bet:</label>
-                <input type="text" id="startingBet" placeholder="$0.00">
-        </div>
-        <div class="row" style="border-bottom: thin solid black">
-            <button type="button" class="btn btn-primary">Play</button>
+        <div class="row" style="margin-top: 30px">
+            <div class="col-in-center">
+                <h1 class="marginSpace" style="text-align: center">Lucky Sevens</h1> 
+                <form onsubmit="runGame(); return false;">
+                    <div class="row marginSpace">   
+                            <label for="startingBet" style="margin-right: 10px">Starting Bet:</label>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" id="startingBet" placeholder="0.00">
+                    </div>
+                    <div class="row">
+                        <div class="col-in-center">
+                            <input type="submit" value="Play" class="btn btn-primary marginSpace"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div id="resultsTable" style="display: none">
+        <hr />
+
+        <div id="resultsTable">
             <div class="row">
-                <h1>Results</h1>
+                <div class= "col-in-center">
+                    <h1>Results</h1>
+                </div>
             </div>
 
             <div class="row">
-                <table class="table col-4">
+                <table class="table table-bordered table-striped table-hover col-6 col-in-center">
                     <tr>
                         <th scope="row">
                             Starting Bet
