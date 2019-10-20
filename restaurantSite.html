@@ -7,18 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
       
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/37225b9be6.js" crossorigin="anonymous"></script>
 
         <style>
             body{
-                background-color: #E0FBFC;
+                background-color: #D0CCD0;
                 font-family: Arial, sans-serif;
             }
 
@@ -26,9 +27,13 @@
                 margin: 80px 0px 60px;
             }
 
-            #announcement{
-                background-color: #493752;
+            .announcement-blue{
+                background-color: #5995AB;
                 color: #E0FBFC;
+            }
+
+            #announcement{
+                margin-top: 40px;
             }
 
         </style>
@@ -51,7 +56,7 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a href="restaurantSite.html"><span class="nav-link active fas fa-home fa-lg"></span></a>
+                    <a href="restaurantSite.html"><span class="nav-link fas fa-home fa-lg" id="home"></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="menu.html">Menu</a>
@@ -61,10 +66,10 @@
                 </li>
             </ul>
 
-            <hr /><br />
+            <br />
 
             <div class="container">
-                <div class="jumbotron" id="announcement">
+                <div class="jumbotron announcement-blue" id="announcement">
                     <h1 class="display-4">Annoucement:</h1>
                     <p class="lead">We're opening a new location!</p>
                     <hr class="my-4" />
@@ -72,11 +77,11 @@
                 </div>
             </div>
 
-            <div class="text-center">
-                <img src="images/cereal_bowl.jpg" class="rounded img-fluid" alt="Cereal and orange juice" width="400" style="padding-bottom: 40px"/> <br />
+            <div class="row justify-content-center">
+                <img src="images/cereal_bowl.jpg" class="rounded img-fluid" alt="Cereal and orange juice" width="400" style="padding: 60px 0px"/> <br />
             </div>
 
-            <p>Jake's cereal shack serves the most healthy and delicious cereal in all of Charlotte.
+            <p style="font-size: 1.5em; text-align: center;">Jake's cereal shack serves the most healthy and delicious cereal in all of Charlotte.
                 We have your well-known favorites, as well as a variety of unique homemade cereals.
                 We serve gluten-free, paleo, and keto options as well. Pair any single or mix of cereals
                 with our speciality milks! Make sure to visit us on Saturday mornings for our all-you-eat
@@ -86,25 +91,24 @@
             <div id="carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="jumbotron d-block w-100" alt="We're opening a new location this December!">
+                            <div class="jumbotron d-block w-100  announcement-blue" alt="We're opening a new location this December!">
                                 <h1 class="display-4">Did you hear?</h1>
-                                <p class="lead">Coming this December:</p>
                                 <hr class="my-4" />
-                                <p>We'll be opening a new location in South End! Drop on by to try some new cereals.</p>
+                                <h4>We'll be opening a new location in South End this December! Drop on by to try some new cereals.</h4>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="jumbotron d-block w-100" alt="We're rolling out our seasonal menu!">
+                            <div class="jumbotron d-block w-100" alt="We're rolling out our seasonal menu!" style="background-color: #FF9D46; color: #DFF8EB;">
                                 <h1 class="display-4">We're rolling out our seasonal menu!</h1>
                                 <hr class="my-4" />
-                                <p>Stop on by before December to try our Pumpkin Spice Grits and Maple Caramel Crunch!</p>
+                                <h4>Stop on by before December to try our Pumpkin Spice Grits and Maple Caramel Crunch!</h4>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="jumbotron d-block w-100" alt="The drink of the month is SG Special Brew!">
+                            <div class="jumbotron d-block w-100 announcement-blue" alt="The drink of the month is SG Special Brew!">
                                 <h1 class="display-4">Drink of the Month</h1>
                                 <hr class="my-4" />
-                                <p class="lead">SG Special Brew</p>
+                                <h4>SG Special Brew</h4>
                             </div>
                         </div>
                     </div>

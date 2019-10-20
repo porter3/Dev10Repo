@@ -4,9 +4,9 @@ Date Created: 10/10/19
 Most recent revision: 10/10/19
 */
 
-header, footer{
-    background-color: #E0FBFC;
-    color: #293241;
+header.jumbotron, footer.jumbotron{
+    background-color: #1C6E8C;
+    color: #FBFCFF;
     text-align: center;
 }
 
@@ -42,22 +42,29 @@ header h1{
 }
 
 .nav a{
-    background-color: #293241;
-    color: white;
     margin: 0 10px;
+    text-decoration: underline;
+}
+
+.nav a:link{
+    background-color: #293241;
+    color: #FBFCFF;
 }
 
 .nav a:visited{
-    color: #DFF8EB;
+    color: #97BDCA;
 }
 
 .nav a:hover{
+    text-decoration: underline;
     font-weight: bold;
     color: #EE6C4D;
 }
 
 .nav a:active{
-    text-decoration: underline;
-    background-color: #87AABF;
-    color: #EE6C4D;
+    text-decoration: none;
+}
+
+#home{
+    background-color: #293241;
 }
