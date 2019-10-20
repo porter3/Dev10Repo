@@ -1,0 +1,75 @@
+/*
+Name: Jacob Porter
+Date Created: 10/10/19
+Most recent revision: 10/20/19
+*/
+
+header.jumbotron, footer.jumbotron{
+    background-color: #1C6E8C;
+    color: #FBFCFF;
+    text-align: center;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+header p{
+    font-weight: bold;
+    text-align: left;
+}
+
+header h1{
+    text-align: center;
+    padding: 60px 0px 0px;
+    border-top: thin solid #4C74BB;
+    font-size: 3em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-warning{
+    text-align: center;
+
+}
+
+.nav{
+    border-bottom: thin solid #293241;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.nav-link{
+    padding: 16px 30px;
+}
+
+.fas{
+    padding: 20px 30px;
+}
+
+.nav a{
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+.nav a:link{
+    background-color: #293241;
+    color: #FBFCFF;
+}
+
+.nav a:visited{
+    color: #97BDCA;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #EE6C4D;
+}
+
+.nav a:active{
+    text-decoration: none;
+}
+
+#home{
+    background-color: #293241;
+}
