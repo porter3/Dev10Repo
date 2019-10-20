@@ -1,7 +1,7 @@
 /*
 Name: Jacob Porter
 Date Created: 10/10/19
-Most recent revision: 10/10/19
+Most recent revision: 10/20/19
 */
 
 header.jumbotron, footer.jumbotron{
@@ -22,9 +22,14 @@ header p{
 header h1{
     text-align: center;
     padding: 60px 0px 0px;
-    border-top: thin solid #4c74bb;
+    border-top: thin solid #4C74BB;
     font-size: 3em;
     font-family: "Montserrat", sans-serif;
+}
+
+.bg-warning{
+    text-align: center;
+
 }
 
 .nav{

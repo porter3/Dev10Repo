@@ -1,3 +1,9 @@
+<!--
+Name: Jacob Porter
+Date Created: 10/4/19
+Most recent revision: 10/20/19
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,8 +37,8 @@
                 text-align: center;
             }
 
-            table{
-                font-size: 1.3em;
+            thead{
+                background-color: #DFF8EB;
             }
 
             .container .row{
@@ -41,6 +47,11 @@
 
             .beverage{
                 text-align: left;
+            }
+
+            #table{
+                font-size: 1.3em;
+                margin: 20px 0px 60px;
             }
         </style>
     </head>
@@ -52,25 +63,25 @@
         </header>
 
         <noscript>
-            <div class="bg-warning" style="text-align: center;">
-                <h3>It looks like you don't have Javascript enabled or your browser doesn't support it. 
-                    Please note that the site is best viewed with Javascript enabled.</h3>
+            <div class="bg-warning">
+                <h4>It looks like you don't have Javascript enabled or your browser doesn't support it. 
+                    Please note that the site is best viewed with Javascript enabled.</h4>
             </div>    
         </noscript>
 
         <div class="container">
 
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a href="restaurantSite.html"><span class="nav-link fas fa-home fa-lg" id="home"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contactUs.html">Contact Us</a>
-            </li>
-        </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="restaurantSite.html"><span class="nav-link fas fa-home fa-lg" id="home"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
 
             <br />
         
@@ -128,11 +139,11 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" id="table">
                 <div class="row justify-content-center">
                     <div class="col-md-5">
-                        <table class="table table-light table-bordered table-striped table-hover" style="margin: 20px 0px 60px;">
-                            <thead style="background-color: #DFF8EB;">
+                        <table class="table table-light table-bordered table-striped table-hover">
+                            <thead>
                                 <tr>
                                     <th class="beverage">Beverages</th>
                                     <th></th>
