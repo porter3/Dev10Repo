@@ -22,6 +22,10 @@
                 font-family: Arial, sans-serif;
             }
 
+            .carousel{
+                margin: 80px 0px 60px;
+            }
+
             #announcement{
                 background-color: #493752;
                 color: #E0FBFC;
@@ -34,9 +38,16 @@
         <header class="jumbotron">
             <p>Home</p>
             <h1>Jake's Cereal Shack</h1>
-        </header> 
+        </header>
 
-        <div class="container-fluid">
+        <noscript>
+            <div class="bg-warning" style="text-align: center;">
+                <h3>It looks like you don't have Javascript enabled or your browser doesn't support it. 
+                    Please note that the site is best viewed with Javascript enabled.</h3>
+            </div>    
+        </noscript>
+
+        <div class="container">
 
             <ul class="nav nav-pills">
                 <li class="nav-item">
@@ -71,6 +82,41 @@
                 with our speciality milks! Make sure to visit us on Saturday mornings for our all-you-eat
                 special! Take out available.
             </p>
+
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="jumbotron d-block w-100" alt="We're opening a new location this December!">
+                                <h1 class="display-4">Did you hear?</h1>
+                                <p class="lead">Coming this December:</p>
+                                <hr class="my-4" />
+                                <p>We'll be opening a new location in South End! Drop on by to try some new cereals.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="jumbotron d-block w-100" alt="We're rolling out our seasonal menu!">
+                                <h1 class="display-4">We're rolling out our seasonal menu!</h1>
+                                <hr class="my-4" />
+                                <p>Stop on by before December to try our Pumpkin Spice Grits and Maple Caramel Crunch!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="jumbotron d-block w-100" alt="The drink of the month is SG Special Brew!">
+                                <h1 class="display-4">Drink of the Month</h1>
+                                <hr class="my-4" />
+                                <p class="lead">SG Special Brew</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
 
         </div>
 

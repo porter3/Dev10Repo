@@ -27,27 +27,37 @@ header h1{
     font-family: "Montserrat", sans-serif;
 }
 
-nav{
-    border-top: thin solid #293241;
+.nav{
     border-bottom: thin solid #293241;
-    padding-top: 24px;
+    padding-top: 12px;
     padding-bottom: 12px;
 }
 
-nav a{
-    color: #293241;
+.nav-link{
+    padding: 16px 30px;
+}
+
+.fas{
+    padding: 20px 30px;
+}
+
+.nav a{
+    background-color: #293241;
+    color: white;
     margin: 0 10px;
 }
 
-nav a:visited{
-    color: #667373;
+.nav a:visited{
+    color: #DFF8EB;
 }
 
-nav a:hover{
+.nav a:hover{
     font-weight: bold;
     color: #EE6C4D;
 }
 
-nav a:active{
-    text-decoration: none;
+.nav a:active{
+    text-decoration: underline;
+    background-color: #87AABF;
+    color: #EE6C4D;
 }

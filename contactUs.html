@@ -32,23 +32,30 @@
             <h1>Jake's Cereal Shack</h1>
         </header>
 
-        <div class="container-fluid">
+        <noscript>
+            <div class="bg-warning" style="text-align: center;">
+                <h3>It looks like you don't have Javascript enabled or your browser doesn't support it. 
+                    Form will not submit without Javascript enabled.</h3>
+            </div>    
+        </noscript>
 
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a href="restaurantSite.html"><span class="nav-link active fas fa-home fa-lg"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contactUs.html">Contact Us</a>
-            </li>
-        </ul>
+        <div class="container">
 
-            <hr /><br />
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="restaurantSite.html"><span class="nav-link active fas fa-home fa-lg"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
 
-            <form action="submit.html" method="POST">
+            <br />
+
+            <form name="contactForm" onsubmit="validateInput(); return false;">
                 <label for="name">Name: </label>
                 <input type="text" id="name" name="name"><br /><br />
                 <label for="email">Email: </label>
@@ -62,8 +69,9 @@
                     <option value="feedback">Feedback</option>
                     <option value="other">Other</option>
                 </select><br /><br />
-                <label for="additionalInfo">Additional Information: </label>
+                <label for="additionalInfo" style="font-weight: normal">Additional Information: </label>
                 <textarea id="additionalInfo" name="additionalInfo"></textarea><br /><br />
+                
                 <fieldset>
                     <legend>Have you been to the restaurant?</legend>
                     <input type="radio" id="choice1" name="attended" value="no">
@@ -98,5 +106,7 @@
             <br />
             <p>&copy; 2019 Jacob Porter. All rights reserved.</p>
         </footer>
+
+        <script type="text/javascript" src="scripts/restaurantSite.js"></script>
     </body>
 </html>
